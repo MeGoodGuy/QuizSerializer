@@ -14,6 +14,9 @@
 	}
 
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -28,18 +31,7 @@
 			
 			case '':
 				default:
-				echo 
-<<<EOT
-<a href="?action=form">Ajouter une question</a><br />
-<table border=1>
-	<thead>
-		<tr>
-			<th>Question</th>
-			<th>Actions</th>
-		</tr>
-	</thead>
-	<tbody>
-EOT;
+				include_once("table.html");
 
 			foreach ($dataJson as $row) {
 				echo "<tr><td>" . $row->question . "</td><td></td></tr>";
