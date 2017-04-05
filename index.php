@@ -23,20 +23,15 @@
 	<?php
 		switch ($action) {
 			case 'form':
-	?>
-		<form action="index.php?action=form" method="post">
-			<input type="hidden" name="from" value="1" />
-			Question : <textarea name="question"></textarea>
-			<br /><input type="submit" value="Valider" />
-		</form>
-	<?php
-		break;
-		case '':
-		default:
-			echo 
+				include_once("formulaire.html");
+				break;
+			
+			case '':
+				default:
+				echo 
 <<<EOT
 <a href="?action=form">Ajouter une question</a><br />
-<table>
+<table border=1>
 	<thead>
 		<tr>
 			<th>Question</th>

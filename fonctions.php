@@ -6,12 +6,13 @@
 	}
 
 	function readJson($filename) {
-		$content = "{}";
+		$content = [];
 		if (file_exists($filename)) {
 			$content = file_get_contents($filename);
+			$content = json_decode($content);
 		}
 
-		return json_decode($content);
+		return $content;
 	}
 
 	function getFormData() {
