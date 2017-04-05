@@ -30,7 +30,7 @@
 				break;
 			
 			case '':
-				default:
+			default:
 				include_once("table.html");
 
 			foreach ($dataJson as $row) {
